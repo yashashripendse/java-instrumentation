@@ -8,3 +8,4 @@
  */
 
 rootProject.name = "java-instrumentation"
+include(":agent")
