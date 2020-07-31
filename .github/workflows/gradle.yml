@@ -9,5 +9,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 14
-    - name: :white_check_mark: Build + Test
+    - name: ✅ Build + Test
       run: ./gradlew build
