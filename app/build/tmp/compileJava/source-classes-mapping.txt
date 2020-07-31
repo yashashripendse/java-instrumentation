@@ -1,2 +1,0 @@
-com/github/yashashripendse/App.java
- com.github.yashashripendse.App
