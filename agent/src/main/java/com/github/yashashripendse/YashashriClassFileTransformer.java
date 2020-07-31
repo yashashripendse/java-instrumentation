@@ -8,7 +8,9 @@ public class YashashriClassFileTransformer implements ClassFileTransformer {
 
     @Override
     public byte[] transform(Module module, ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
-        System.out.println("had a chance to transform!");
+        if (className.equals("com/github/yashashripendse/App")){
+            System.out.println("had a chance to transform, " + className);
+        }
         return classfileBuffer;
     }
 }
