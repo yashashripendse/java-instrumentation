@@ -10,6 +10,6 @@ jobs:
       with:
         java-version: 14
     - name: ✅ Build + Test
-      run:
-        - ./gradlew build
-        - java -javaagent:agent/build/libs/agent-with-manifest.jar -cp agent/build/libs/agent-with-manifest.jar:app/build/libs/app.jar com.github.yashashripendse.App
+      run: ./gradlew build
+    - name: Run Java Agent with App
+      run: java -javaagent:agent/build/libs/agent-with-manifest.jar -cp agent/build/libs/agent-with-manifest.jar:app/build/libs/app.jar com.github.yashashripendse.App
